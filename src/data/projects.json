@@ -1,0 +1,43 @@
+
+[
+  {
+    "id": 1,
+    "name": "Todo App",
+    "description": "Классическое приложение для задач с красивым UI и анимациями",
+    "description_en": "Classic task management app with beautiful UI and animations",
+    "technologies": ["React", "SCSS", "LocalStorage"],
+    "githubUrl": "https://github.com/твой-логин/todo-app",
+    "demoUrl": "https://todo-app.vercel.app",
+    "image": "todo.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Weather App",
+    "description": "Приложение погоды с использованием OpenWeather API",
+    "description_en": "Weather app using OpenWeather API",
+    "technologies": ["React", "API", "Axios"],
+    "githubUrl": "https://github.com/твой-логин/weather-app",
+    "demoUrl": "https://weather-app.vercel.app",
+    "image": "weather.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Portfolio v1",
+    "description": "Мое первое портфолио с анимациями и темной темой",
+    "description_en": "My first portfolio with animations and dark theme",
+    "technologies": ["React", "Framer Motion", "SCSS"],
+    "githubUrl": "https://github.com/твой-логин/portfolio",
+    "demoUrl": "https://portfolio.vercel.app",
+    "image": "portfolio.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Chat App",
+    "description": "Простой чат с использованием Firebase",
+    "description_en": "Simple chat app using Firebase",
+    "technologies": ["React", "Firebase", "SCSS"],
+    "githubUrl": "https://github.com/твой-логин/chat-app",
+    "demoUrl": "https://chat-app.vercel.app",
+    "image": "chat.jpg"
+  }
+]
