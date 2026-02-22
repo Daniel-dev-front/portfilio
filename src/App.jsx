@@ -8,7 +8,7 @@ import Header from './components/header/Header';
 import Footer from './components/footer/Footer';
 import Hero from './components/hero/Hero';
 import Projects from './components/projects/Projects';
-import About from './components/About/About';
+import About from './components/about/About';
 
 const App = () => {
   const [theme, setTheme] = useState('dark');
