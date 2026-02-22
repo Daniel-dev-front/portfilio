@@ -5,6 +5,8 @@ import ru from '../../locales/ru.json';
 import en from '../../locales/en.json';
 import styles from './Footer.module.scss';
 import { LanguageProvider } from '../../context/LanguageContext';
+import { FaGithub, FaHeart, FaTelegram, } from "react-icons/fa6";
+import { MdEmail } from "react-icons/md";
 
 const Footer = () => {
   const { language } = useContext(LanguageProvider);
@@ -12,10 +14,10 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   const socialLinks = [
-    { name: 'GitHub', url: 'https://github.com/твой-логин', icon: '🐙' },
-    { name: 'Telegram', url: 'https://t.me/твой-ник', icon: '📱' },
-    { name: 'Email', url: 'mailto:твой-email@example.com', icon: '✉️' },
-    { name: 'LinkedIn', url: 'https://linkedin.com/in/твой-профиль', icon: '💼' },
+    { name: 'GitHub', url: 'https://github.com/твой-логин', icon: <FaGithub  size={24}/> },
+    { name: 'Telegram', url: 'https://t.me/твой-ник', icon: <FaTelegram color="#24A1DE" size={24}/> },
+    { name: 'Email', url: 'mailto:твой-email@example.com', icon: <MdEmail size={24}/> },
+    // { name: 'LinkedIn', url: 'https://linkedin.com/in/твой-профиль', icon: '💼' },
   ];
 
   return (
@@ -65,8 +67,8 @@ const Footer = () => {
             © {currentYear} {language === 'ru' ? 'Все права защищены' : 'All rights reserved'}
           </p>
           <p className={styles.madeWith}>
-            {language === 'ru' ? 'Сделано с' : 'Made with'} <span className={styles.heart}>❤️</span> 
-            {language === 'ru' ? ' используя React' : ' using React'}
+            {language === 'ru' ? 'Сделано с' : 'Made with'} <span className={styles.heart}><FaHeart color="red" /></span> 
+            {language === 'ru' ? 'и используя React' : ' using React'}
           </p>
         </div>
       </div>

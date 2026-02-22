@@ -60,10 +60,10 @@ const Hero = () => {
             <pre>
               <code>
 {`const developer = {
-  name: 'Твое Имя',
+  name: 'Даниел',
   age: 16,
-  skills: ['React', 'Vite', 'SCSS'],
-  passion: 'Creating awesome UIs',
+  skills: ['React', 'Vite', 'SCSS', 'JS','HTML', 'CSS'],
+  passion: 'Creating awesome UIs', 
   future: 'Senior Dev'
 };`}
               </code>

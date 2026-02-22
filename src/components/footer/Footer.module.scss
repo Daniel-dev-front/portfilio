@@ -118,6 +118,8 @@
 
 .socialIcon {
   font-size: 1.2rem;
+  vertical-align: middle;
+  border: 1px solid #000;
 }
 
 .bottom {
@@ -151,9 +153,9 @@
 }
 
 .heart {
-  color: #ff4d4d;
   animation: heartbeat 1.5s ease infinite;
   display: inline-block;
+  fill: #ff4d4d;
 }
 
 @keyframes fadeIn {

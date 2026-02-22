@@ -13,7 +13,6 @@ const About = () => {
   const skills = [
     { name: 'React', level: 85, color: '#61DAFB' },
     { name: 'JavaScript', level: 80, color: '#F7DF1E' },
-    { name: 'TypeScript', level: 70, color: '#3178C6' },
     { name: 'SCSS', level: 85, color: '#CC6699' },
     { name: 'HTML/CSS', level: 90, color: '#E34F26' },
     { name: 'Git', level: 75, color: '#F05032' },

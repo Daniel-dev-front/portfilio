@@ -79,7 +79,6 @@ $transition-bounce: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   align-items: center;
 }
 
-// Логотип
 .logo {
   font-size: 1.5rem;
   font-weight: 700;
@@ -101,7 +100,7 @@ $transition-bounce: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   }
 }
 
-// Десктоп навигация
+
 .nav {
   @media (max-width: $breakpoint-mobile) {
     display: none;
@@ -209,6 +208,7 @@ $transition-bounce: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 
 // ========== БУРГЕР МЕНЮ ==========
 .burgerButton {
+  
   flex-direction: column;
   justify-content: space-between;
   width: 32px;
@@ -240,6 +240,7 @@ $transition-bounce: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   }
   
   &.open {
+    border: 1px solid #000;
     span {
       background: var(--gradient-start);
       
@@ -265,9 +266,11 @@ $transition-bounce: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   }
 }
 
+
+
+
 // Мобильное меню
 .mobileMenu {
-    display: none;
   position: fixed;
   top: 0;
   right: -100%;
@@ -282,7 +285,10 @@ $transition-bounce: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   z-index: 1001;
   box-shadow: -10px 0 30px rgba(0, 0, 0, 0.3);
   border-left: 1px solid var(--border-color);
-  border: 1px solid red;
+  box-sizing: border-box;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
   
   &.open {
     right: 0;
@@ -443,8 +449,6 @@ $transition-bounce: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 // Адаптация для landscape ориентации на мобилках
 @media (max-width: $breakpoint-mobile) and (orientation: landscape) {
   .mobileMenu {
-display: flex;
-flex-direction: column;
     padding: 70px 28px 20px;
     
     .navList {

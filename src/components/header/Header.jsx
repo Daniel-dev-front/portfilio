@@ -69,7 +69,9 @@ const Header = () => {
             className={styles.langToggle} 
             onClick={toggleLanguage}
             aria-label="Сменить язык"
+          
           >
+            
             {language === 'ru' ? 'EN' : 'RU'}
           </button>
           <ThemeToggle />
@@ -97,6 +99,9 @@ const Header = () => {
         )}
 
         {/* Мобильное меню */}
+      </div >
+      <div className={styles.menu}>
+
         <div className={`${styles.mobileMenu} ${isMenuOpen ? styles.open : ''}`}>
           <nav>
             <ul className={styles.navList}>
@@ -129,7 +134,7 @@ const Header = () => {
             {t.nav.contact}
           </button>
         </div>
-      </div>
+        </div>
     </header>
   );
 };
