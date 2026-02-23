@@ -1,10 +1,10 @@
 // src/components/Header/ThemeToggle.jsx
 
 import React, { useContext } from 'react';
-import { ThemeProvider } from './ThemeContext';
+import { ThemeContext } from './ThemeContext';
 
 const ThemeToggle = () => {
-  const { theme, setTheme } = useContext(ThemeProvider);
+  const { theme, setTheme } = useContext(ThemeContext);
 
   const toggleTheme = () => {
     setTheme(theme === 'dark' ? 'light' : 'dark');

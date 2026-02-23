@@ -1,8 +1,9 @@
 // src/context/ThemeContext.jsx
 
+/* eslint-disable react-refresh/only-export-components */
 import { createContext } from 'react';
 
-const ThemeContext = createContext({
+export const ThemeContext = createContext({
   theme: 'dark',
   setTheme: () => {},
 });

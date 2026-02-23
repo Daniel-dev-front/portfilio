@@ -6,10 +6,10 @@ import en from '../../locales/en.json';
 import projectsData from '../../data/projects.json';
 import styles from './Projects.module.scss';
 import ProjectCard from './ProjectsCard';
-import { LanguageProvider } from '../../context/LanguageContext';
+import { LanguageContext } from '../../context/LanguageContext';
 
 const Projects = () => {
-  const { language } = useContext(LanguageProvider);
+  const { language } = useContext(LanguageContext);
   const t = language === 'ru' ? ru : en;
 
   return (

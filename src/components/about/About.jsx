@@ -4,10 +4,10 @@ import React, { useContext } from 'react';
 import ru from '../../locales/ru.json';
 import en from '../../locales/en.json';
 import styles from './About.module.scss';
-import { LanguageProvider } from '../../context/LanguageContext';
+import { LanguageContext } from '../../context/LanguageContext';
 
 const About = () => {
-  const { language } = useContext(LanguageProvider);
+  const { language } = useContext(LanguageContext);
   const t = language === 'ru' ? ru : en;
 
   const skills = [

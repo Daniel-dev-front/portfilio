@@ -98,10 +98,8 @@ const Header = () => {
           <div className={styles.overlay} onClick={closeMenu}></div>
         )}
 
-        {/* Мобильное меню */}
       </div >
-      <div className={styles.menu}>
-
+        {/* Мобильное меню */}
         <div className={`${styles.mobileMenu} ${isMenuOpen ? styles.open : ''}`}>
           <nav>
             <ul className={styles.navList}>
@@ -134,7 +132,7 @@ const Header = () => {
             {t.nav.contact}
           </button>
         </div>
-        </div>
+
     </header>
   );
 };

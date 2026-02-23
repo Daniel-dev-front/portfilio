@@ -4,12 +4,12 @@ import React, { useContext } from 'react';
 import ru from '../../locales/ru.json';
 import en from '../../locales/en.json';
 import styles from './Footer.module.scss';
-import { LanguageProvider } from '../../context/LanguageContext';
+import { LanguageContext } from '../../context/LanguageContext';
 import { FaGithub, FaHeart, FaTelegram, } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 
 const Footer = () => {
-  const { language } = useContext(LanguageProvider);
+  const { language } = useContext(LanguageContext);
   const t = language === 'ru' ? ru : en;
   const currentYear = new Date().getFullYear();
 

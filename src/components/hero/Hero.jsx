@@ -4,10 +4,10 @@ import React, { useContext } from 'react';
 import ru from '../../locales/ru.json';
 import en from '../../locales/en.json';
 import styles from './Hero.module.scss';
-import { LanguageProvider } from '../../context/LanguageContext';
+import { LanguageContext } from '../../context/LanguageContext';
 
 const Hero = () => {
-  const { language } = useContext(LanguageProvider);
+  const { language } = useContext(LanguageContext);
   const t = language === 'ru' ? ru : en;
 
   return (
