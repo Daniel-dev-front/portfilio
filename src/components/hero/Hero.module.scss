@@ -1,5 +1,11 @@
 // src/components/Hero/Hero.module.scss
 
+// Брейкпоинты
+$breakpoint-mobile: 480px;
+$breakpoint-tablet: 768px;
+$breakpoint-laptop: 1024px;
+$breakpoint-desktop: 1200px;
+
 .hero {
   min-height: 100vh;
   display: flex;
@@ -29,12 +35,6 @@
   align-items: center;
   position: relative;
   z-index: 1;
-
-  @media (max-width: 968px) {
-    grid-template-columns: 1fr;
-    gap: 40px;
-    text-align: center;
-  }
 }
 
 .content {
@@ -50,10 +50,6 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-
-  @media (max-width: 768px) {
-    font-size: 2.5rem;
-  }
 }
 
 .subtitle {
@@ -61,10 +57,6 @@
   color: var(--text-color);
   opacity: 0.9;
   margin-bottom: 16px;
-
-  @media (max-width: 768px) {
-    font-size: 1.25rem;
-  }
 }
 
 .description {
@@ -79,14 +71,6 @@
   display: flex;
   gap: 16px;
   margin-bottom: 48px;
-
-  @media (max-width: 968px) {
-    justify-content: center;
-  }
-
-  @media (max-width: 480px) {
-    flex-direction: column;
-  }
 }
 
 .primaryButton, .secondaryButton {
@@ -122,10 +106,6 @@
 .stats {
   display: flex;
   gap: 40px;
-
-  @media (max-width: 968px) {
-    justify-content: center;
-  }
 }
 
 .stat {
@@ -148,11 +128,6 @@
 .imageWrapper {
   position: relative;
   animation: float 6s ease-in-out infinite;
-
-  @media (max-width: 968px) {
-    max-width: 500px;
-    margin: 0 auto;
-  }
 }
 
 .codeBlock {
@@ -171,10 +146,6 @@
       font-size: 0.9rem;
       line-height: 1.6;
       color: #e2e8f0;
-      
-      @media (max-width: 768px) {
-        font-size: 0.75rem;
-      }
     }
   }
 }
@@ -208,6 +179,7 @@
   }
 }
 
+// Анимации
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -237,5 +209,234 @@
   }
   60% {
     transform: translateY(-5px);
+  }
+}
+
+// ========== МЕДИА ЗАПРОСЫ ==========
+
+// ТЕЛЕФОНЫ (до 480px) - ПОЛНОСТЬЮ МОБИЛЬНАЯ ВЕРСИЯ
+@media (max-width: $breakpoint-mobile) {
+  .hero {
+    padding: 60px 16px;
+    min-height: auto;
+  }
+
+  .container {
+    width: 86%;
+    grid-template-columns: 1fr;
+    gap: 35px;
+    text-align: center;
+  }
+
+  .title {
+    font-size: 2rem;
+    margin-bottom: 16px;
+  }
+
+  .subtitle {
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+  }
+
+  .description {
+    font-size: 0.95rem;
+    margin-bottom: 24px;
+  }
+
+  .buttons {
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 32px;
+  }
+
+  .primaryButton, .secondaryButton {
+    width: 100%;
+    text-align: center;
+    padding: 12px 24px;
+  }
+
+  .stats {
+    gap: 20px;
+    justify-content: space-around;
+  }
+
+  .statNumber {
+    font-size: 1.5rem;
+  }
+
+  .statLabel {
+    font-size: 0.75rem;
+  }
+
+  .imageWrapper {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .codeBlock {
+    padding: 16px;
+    
+    pre code {
+      font-size: 0.65rem;
+    }
+  }
+
+  .scrollIndicator {
+    bottom: 20px;
+    
+    span {
+      width: 15px;
+      height: 15px;
+    }
+  }
+}
+
+// ПЛАНШЕТЫ (481px - 768px) - АДАПТИРОВАННАЯ ВЕРСИЯ
+@media (min-width: $breakpoint-mobile + 1) and (max-width: $breakpoint-tablet) {
+  .hero {
+    padding: 70px 20px;
+    
+  }
+
+  .container {
+    grid-template-columns: 1fr; // Одна колонка
+    gap: 40px;
+    text-align: center; // Центрируем текст
+  }
+
+  .title {
+    font-size: 2.5rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .subtitle {
+    font-size: 1.25rem;
+  }
+
+  .description {
+    font-size: 1rem;
+    max-width: 550px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .buttons {
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+
+  .stats {
+    justify-content: center;
+    gap: 50px;
+  }
+
+  .statNumber {
+    font-size: 2rem;
+  }
+
+  .statLabel {
+    font-size: 0.9rem;
+  }
+
+  .imageWrapper {
+    max-width: 450px;
+    margin: 0 auto;
+  }
+
+  .codeBlock {
+    padding: 20px;
+    
+    pre code {
+      font-size: 0.8rem;
+    }
+  }
+
+  .scrollIndicator {
+    bottom: 30px;
+  }
+}
+
+// НОУТБУКИ (769px - 1024px) - ДВЕ КОЛОНКИ
+@media (min-width: $breakpoint-tablet + 1) and (max-width: $breakpoint-laptop) {
+  .container {
+    gap: 40px;
+  }
+
+  .title {
+    font-size: 3rem;
+  }
+
+  .subtitle {
+    font-size: 1.35rem;
+  }
+
+  .description {
+    font-size: 1rem;
+  }
+
+  .stats {
+    gap: 30px;
+  }
+
+  .codeBlock {
+    padding: 20px;
+    
+    pre code {
+      font-size: 0.8rem;
+    }
+  }
+}
+
+// БОЛЬШИЕ ДЕСКТОПЫ (1025px и выше)
+@media (min-width: $breakpoint-laptop + 1) {
+  .container {
+    gap: 80px;
+  }
+
+  .title {
+    font-size: 4rem;
+  }
+
+  .subtitle {
+    font-size: 1.75rem;
+  }
+
+  .description {
+    font-size: 1.25rem;
+  }
+}
+
+// ПЛАНШЕТЫ В LANDSCAPE ОРИЕНТАЦИИ
+@media (min-width: $breakpoint-mobile + 1) and (max-width: $breakpoint-tablet) and (orientation: landscape) {
+  .hero {
+    min-height: auto;
+    padding: 50px 20px;
+  }
+
+  .container {
+    gap: 30px;
+  }
+
+  .title {
+    font-size: 2.2rem;
+    margin-bottom: 16px;
+  }
+
+  .content {
+    margin-bottom: 20px;
+  }
+
+  .buttons {
+    margin-bottom: 30px;
+  }
+
+  .stats {
+    margin-bottom: 20px;
+  }
+
+  .imageWrapper {
+    max-width: 350px;
   }
 }
