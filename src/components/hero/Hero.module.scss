@@ -256,8 +256,14 @@ $breakpoint-desktop: 1200px;
   }
 
   .imageWrapper {
-    max-width: 300px;
+    max-width: 350px;
     margin: 0 auto;
+    Img{
+      width: 330px;
+      height: 330px;
+      margin-bottom: 20px;
+      margin-top: 30px;
+    }
   }
 
   .codeBlock {
