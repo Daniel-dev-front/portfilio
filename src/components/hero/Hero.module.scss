@@ -128,27 +128,14 @@ $breakpoint-desktop: 1200px;
 .imageWrapper {
   position: relative;
   animation: float 6s ease-in-out infinite;
-}
-
-.codeBlock {
-  background: rgba(20, 20, 30, 0.5);
-  backdrop-filter: blur(10px);
-  border: 1px solid var(--border-color);
-  border-radius: 12px;
-  padding: 24px;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
-  
-  pre {
-    margin: 0;
-    
-    code {
-      font-family: 'Fira Code', monospace;
-      font-size: 0.9rem;
-      line-height: 1.6;
-      color: #e2e8f0;
-    }
+  img{
+    width: 590px;
+    height: 590px;
+    border-radius: 24px;
+    object-fit: cover;
   }
 }
+
 
 .scrollIndicator {
   position: absolute;

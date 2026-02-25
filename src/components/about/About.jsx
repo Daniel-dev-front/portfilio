@@ -11,11 +11,11 @@ const About = () => {
   const t = language === 'ru' ? ru : en;
 
   const skills = [
-    { name: 'React', level: 85, color: '#61DAFB' },
-    { name: 'JavaScript', level: 80, color: '#F7DF1E' },
-    { name: 'SCSS', level: 85, color: '#CC6699' },
+    { name: 'React', level: 65, color: '#61DAFB' },
+    { name: 'JavaScript', level: 78, color: '#F7DF1E' },
+    { name: 'SCSS', level: 80, color: '#CC6699' },
     { name: 'HTML/CSS', level: 90, color: '#E34F26' },
-    { name: 'Git', level: 75, color: '#F05032' },
+    { name: 'Git', level: 65, color: '#F05032' },
   ];
 
   return (

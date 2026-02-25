@@ -5,6 +5,7 @@ import ru from '../../locales/ru.json';
 import en from '../../locales/en.json';
 import styles from './Hero.module.scss';
 import { LanguageContext } from '../../context/LanguageContext';
+import port_photo from "../../assets/photo_portf.png"
 
 const Hero = () => {
   const { language } = useContext(LanguageContext);
@@ -56,19 +57,7 @@ const Hero = () => {
         </div>
 
         <div className={styles.imageWrapper}>
-          <div className={styles.codeBlock}>
-            <pre>
-              <code>
-{`const developer = {
-  name: 'Даниел',
-  age: 16,
-  skills: ['React', 'Vite', 'SCSS', 'JS','HTML', 'CSS'],
-  passion: 'Creating awesome UIs', 
-  future: 'Senior Dev'
-};`}
-              </code>
-            </pre>
-          </div>
+          <img src={port_photo} alt="" />
         </div>
       </div>
       

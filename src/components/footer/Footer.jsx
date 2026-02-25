@@ -14,9 +14,9 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   const socialLinks = [
-    { name: 'GitHub', url: 'https://github.com/твой-логин', icon: <FaGithub  size={24}/> },
-    { name: 'Telegram', url: 'https://t.me/твой-ник', icon: <FaTelegram color="#24A1DE" size={24}/> },
-    { name: 'Email', url: 'mailto:твой-email@example.com', icon: <MdEmail size={24}/> },
+    { name: 'GitHub', url: 'https://github.com/Daniel-dev-front', icon: <FaGithub  size={24}/> },
+    { name: 'Telegram', url: 'https://t.me/Enemygood09', icon: <FaTelegram color="#24A1DE" size={24}/> },
+    { name: 'Email', url: 'mailto:dujsenbekovdaniel8@gmail.com', icon: <MdEmail size={24}/> },
     // { name: 'LinkedIn', url: 'https://linkedin.com/in/твой-профиль', icon: '💼' },
   ];
 

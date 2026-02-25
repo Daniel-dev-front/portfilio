@@ -1,43 +1,80 @@
-
 [
   {
     "id": 1,
-    "name": "Todo App",
-    "description": "Классическое приложение для задач с красивым UI и анимациями",
-    "description_en": "Classic task management app with beautiful UI and animations",
-    "technologies": ["React", "SCSS", "LocalStorage"],
-    "githubUrl": "https://github.com/твой-логин/todo-app",
-    "demoUrl": "https://todo-app.vercel.app",
-    "image": "todo.jpg"
+    "name": "Dental Clinic",
+    "description": "Современный веб-интерфейс для стоматологической клиники с модулем онлайн-записи, детальным прайс-листом и разделом специалистов. Особое внимание уделено UX-дизайну для медицинских сервисов и адаптивности под мобильные устройства.",
+    "description_en": "A modern web interface for a dental clinic featuring an online booking module, detailed price list, and medical staff profiles. Focuses on healthcare UX and flawless mobile responsiveness.",
+    "technologies": [
+      "React",
+      "JavaScript",
+      "SCSS Modules",
+      "Lucide Icons",
+      "LocalStorage",
+      "Firebase",
+      "API",
+      "Axios"
+    ],
+    "features": [
+      "Интерактивная форма записи",
+      "Фальтрация услуг по категориям",
+      "Галерея работ 'До/После'",
+      "Адаптивная верстка (Mobile First)"
+    ],
+    "githubUrl": "https://github.com/Daniel-dev-front/dental-clinic-offical-site",
+    "demoUrl": "https://project-neon-phi-53.vercel.app",
+    "image": "/src/assets/dental-clinic.png"
   },
-  {
-    "id": 2,
-    "name": "Weather App",
-    "description": "Приложение погоды с использованием OpenWeather API",
-    "description_en": "Weather app using OpenWeather API",
-    "technologies": ["React", "API", "Axios"],
-    "githubUrl": "https://github.com/твой-логин/weather-app",
-    "demoUrl": "https://weather-app.vercel.app",
-    "image": "weather.jpg"
-  },
+ {
+  "id": 2,
+  "name": "Foodieland",
+  "description": "Учебный проект по верстке многостраничного сайта с рецептами. Работа выполнена по макету из Figma для отработки навыков HTML и CSS.",
+  "description_en": "Educational project of multi-page recipe website layout. Created from Figma design to practice HTML and CSS skills.",
+  "technologies": ["HTML", "CSS", "Figma"],
+  "features": [
+    "Pixel perfect верстка по Figma",
+    "Чистый HTML и CSS код",
+    "Сетка с карточками рецептов"
+  ],
+  "features_en": [
+    "Pixel perfect layout from Figma",
+    "Clean HTML and CSS code",
+    "Recipe card grid"
+  ],
+  "githubUrl": "https://github.com/Daniel-dev-front/Foodieland-work-figma",
+  "demoUrl": "https://foodieland.vercel.app",
+  "image": "/src/assets/foodieland.png"
+},
   {
     "id": 3,
-    "name": "Portfolio v1",
-    "description": "Мое первое портфолио с анимациями и темной темой",
-    "description_en": "My first portfolio with animations and dark theme",
-    "technologies": ["React", "Framer Motion", "SCSS"],
-    "githubUrl": "https://github.com/твой-логин/portfolio",
-    "demoUrl": "https://portfolio.vercel.app",
-    "image": "portfolio.jpg"
+    "name": "To-Do List",
+    "description": "Классическое приложение для управления задачами с возможностью добавления, редактирования и удаления задач. Поддерживает темы и локальное хранилище.",
+    "description_en": "Classic task management app with add, edit, and delete functionality. Supports themes and local storage.",
+    "technologies": ["React", "LocalStorage", "SCSS", "Context API"],
+    "features": ["Добавление/удаление товара", "Добавление в корзину"],
+    "features_en": ["Add/delete products", "Add to cart"],
+
+    "githubUrl": "https://github.com/Daniel-dev-front/to-do-list",
+    "demoUrl": "https://to-do-list-nf84.vercel.app",
+    "image": "/src/assets/todo-app.png"
   },
   {
-    "id": 4,
-    "name": "Chat App",
-    "description": "Простой чат с использованием Firebase",
-    "description_en": "Simple chat app using Firebase",
-    "technologies": ["React", "Firebase", "SCSS"],
-    "githubUrl": "https://github.com/твой-логин/chat-app",
-    "demoUrl": "https://chat-app.vercel.app",
-    "image": "chat.jpg"
-  }
+  "id": 3,
+  "name": "Exclusive Store",
+  "description": "Интернет-магазин с корзиной и управлением товарами. Разработан на React с использованием Context API для управления состоянием и LocalStorage для сохранения данных.",
+  "description_en": "E-commerce store with cart and product management. Built with React using Context API for state management and LocalStorage for data persistence.",
+  "technologies": ["React", "Vite", "SCSS Modules", "Context API", "LocalStorage"],
+  "features": [
+    "Добавление/удаление товаров",
+    "Корзина покупок",
+    "Сохранение данных в LocalStorage"
+  ],
+  "features_en": [
+    "Add/delete products",
+    "Shopping cart",
+    "LocalStorage data persistence"
+  ],
+  "githubUrl": "https://github.com/Daniel-dev-front/store",
+  "demoUrl": "https://foodieland-work-figma-38b1.vercel.app/",
+  "image": "/src/assets/Exclusive-store.png"
+}
 ]
