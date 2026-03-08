@@ -47,12 +47,12 @@ const Hero = () => {
                 {language === 'ru' ? 'Технологий' : 'Technologies'}
               </span>
             </div>
-            <div className={styles.stat}>
+            {/* <div className={styles.stat}>
               <span className={styles.statNumber}>2+</span>
               <span className={styles.statLabel}>
                 {language === 'ru' ? 'Года опыта' : 'Years of exp'}
               </span>
-            </div>
+            </div> */}
           </div>
         </div>
 

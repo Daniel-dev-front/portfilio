@@ -2,7 +2,7 @@
   "hero": {
     "title": "Hi, I'm a beginner frontend developer",
     "subtitle": "I'm 16 years old and I create modern web applications",
-    "description": "Specializing in React, creating beautiful and functional interfaces"
+    "description": "I create responsive React applications with authorization, API access, and deployment on Vercel."
   },
   "nav": {
     "projects": "Projects",
