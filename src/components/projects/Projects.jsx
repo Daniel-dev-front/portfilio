@@ -15,7 +15,8 @@ const Projects = () => {
   const t = language === 'ru' ? ru : en;
 
   return (
-    <section id="projects" className={styles.projects}>
+    <section className='container'>
+      <div id="projects" className={styles.projects}>
       <div className={styles.container}>
         <h2 className={styles.sectionTitle}>
           {language === 'ru' ? 'Мои проекты' : 'My Projects'}
@@ -95,6 +96,7 @@ const Projects = () => {
             </div>
           ))}
         </div>
+      </div>
       </div>
     </section>
   );

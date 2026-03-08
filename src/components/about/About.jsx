@@ -36,7 +36,7 @@ const About = () => {
                 <span className={styles.achievementIcon}>🎯</span>
                 <div className={styles.achievementText}>
                   <h4>{language === 'ru' ? 'Цель' : 'Goal'}</h4>
-                  <p>{language === 'ru' ? 'Стать Senior Fullstack разработчиком' : 'Become a Senior Fullstack Developer'}</p>
+                  <p>{language === 'ru' ? 'Получить позицию Junior Frontend Developer и развиваться в сторону Fullstack разработки' : 'Get a Junior Frontend Developer position and progress toward full-stack development'}</p>
                 </div>
               </div>
               

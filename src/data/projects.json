@@ -2,17 +2,17 @@
   {
     "id": 1,
     "name": "Dental Clinic",
-    "description": "Современный веб-интерфейс для стоматологической клиники с модулем онлайн-записи, детальным прайс-листом и разделом специалистов. Особое внимание уделено UX-дизайну для медицинских сервисов и адаптивности под мобильные устройства.",
+    "description": "Веб-приложение для стоматологической клиники с клиентской и административной частью. Реализована авторизация, управление услугами, онлайн-запись и мультиязычный интерфейс.",
     "description_en": "A modern web interface for a dental clinic featuring an online booking module, detailed price list, and medical staff profiles. Focuses on healthcare UX and flawless mobile responsiveness.",
     "technologies": [
       "React",
       "JavaScript",
-      "SCSS Modules",
-      "Lucide Icons",
-      "LocalStorage",
       "Firebase",
-      "API",
-      "Axios"
+      "LocalStorage",
+      "REST API",
+      "Axios",
+      "SCSS Modules",
+      "Lucide Icons"
     ],
     "features": [
       "Интерактивная форма записи",
@@ -24,28 +24,8 @@
     "demoUrl": "https://project-neon-phi-53.vercel.app",
     "image": "/src/assets/dental-clinic.png"
   },
- {
-  "id": 2,
-  "name": "Foodieland",
-  "description": "Учебный проект по верстке многостраничного сайта с рецептами. Работа выполнена по макету из Figma для отработки навыков HTML и CSS.",
-  "description_en": "Educational project of multi-page recipe website layout. Created from Figma design to practice HTML and CSS skills.",
-  "technologies": ["HTML", "CSS", "Figma"],
-  "features": [
-    "Pixel perfect верстка по Figma",
-    "Чистый HTML и CSS код",
-    "Сетка с карточками рецептов"
-  ],
-  "features_en": [
-    "Pixel perfect layout from Figma",
-    "Clean HTML and CSS code",
-    "Recipe card grid"
-  ],
-  "githubUrl": "https://github.com/Daniel-dev-front/Foodieland-work-figma",
-  "demoUrl": "https://foodieland.vercel.app",
-  "image": "/src/assets/foodieland.png"
-},
   {
-    "id": 3,
+    "id": 2,
     "name": "To-Do List",
     "description": "Классическое приложение для управления задачами с возможностью добавления, редактирования и удаления задач. Поддерживает темы и локальное хранилище.",
     "description_en": "Classic task management app with add, edit, and delete functionality. Supports themes and local storage.",

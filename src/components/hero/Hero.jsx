@@ -27,16 +27,16 @@ const Hero = () => {
           
           <div className={styles.buttons}>
             <a href="#projects" className={styles.primaryButton}>
-              {language === 'ru' ? 'Смотреть проекты' : 'View Projects'}
+              {language === 'ru' ? 'Посмотреть проекты' : 'View Projects'}
             </a>
             <a href="#contact" className={styles.secondaryButton}>
-              {language === 'ru' ? 'Связаться со мной' : 'Contact Me'}
+              {language === 'ru' ? 'Написать мне' : 'Contact Me'}
             </a>
           </div>
 
           <div className={styles.stats}>
             <div className={styles.stat}>
-              <span className={styles.statNumber}>4+</span>
+              <span className={styles.statNumber}>14+</span>
               <span className={styles.statLabel}>
                 {language === 'ru' ? 'Проектов' : 'Projects'}
               </span>
